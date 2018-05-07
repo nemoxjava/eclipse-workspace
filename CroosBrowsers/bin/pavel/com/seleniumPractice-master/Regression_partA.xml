@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Anand Selenium Practice" parallel="tests" thread-count="150"
+	data-provider-thread-count="150" preserve-order="true">
+	<parameter name="deviceHost" value="localhost" />
+	<parameter name="devicePort" value="4444" />
+	
+	<parameter name="browserName" value="" />
+	<parameter name="webSite" value="https://cert-www.realizedev.com/community" />
+
+	<test name="MSuite1" thread-count="1" parallel="false" >
+	<classes>
+            <class name="framework.locator" />
+	</classes>
+	</test>
+     
+</suite>
